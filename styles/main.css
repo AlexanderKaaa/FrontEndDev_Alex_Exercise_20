@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+.main-content{
+    width:960px;
+    margin:20px auto;
+}
+
+.fl{
+    float:left;
+    width:50%;
+}
+
+.fr{
+    float:right;
+    width:50%;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+   p,li{
+	   color: #0000ff;
+	   
+   }
+	
+
+	
+}
+	
+	@media only screen and (min-width: 960px){
+	
+	li {
+		font-size:20px;
+	
+	}
+	
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+	p{
+		
+		background-color:gray;
+		
+	}
+	
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+
+/*
+Write a media query to do the following if the screen is less than 480px
+
+Make .main-content span the whole screen.
+
+Remove the floats on .fl and .fr
+
+Make .fl and .fr span all available space
+
+
+
+*/
+
+
+
+@media only screen and (max-width: 480px) {
+	.main-content{
+		
+		width:100%;
+	}
+	
+	.fl,.fr{
+		clear:both;
+		min-width:100%;
+		
+	}
+	
+	
+	
+}
